@@ -1,2 +1,12 @@
-<%= @answer%><br>
-<%= link_to "ask", ask_path %>
+<div class="conversation">
+  <div class="ask">
+    — <%= params[:question] %>
+  </div>
+  <div class="answer">
+    — <%=@answer%><br>
+  </div>
+</div>
+
+<div class="asklink">
+  <%= link_to "ask a new question", ask_path %>
+</div>
